@@ -2,7 +2,7 @@ const skillCategories = [
   {
     title: "Programming",
     skills: ["Python", "JavaScript", "PHP", "MySQL"],
-    icon: "💻",
+    icon: "fas fa-code",
   },
   {
     title: "Design",
@@ -33,7 +33,7 @@ export function Skills() {
               className="bg-[#1a1a1a] p-6 rounded-2xl hover:transform hover:-translate-y-2 transition-all duration-300 shadow-lg hover:shadow-2xl"
             >
               <div className="flex items-center gap-3 mb-6">
-                <span className="text-3xl">{category.icon}</span>
+                <i className="text-3xl">{category.icon}</i>
                 <h3 className="text-xl md:text-2xl font-bold gradient-text">{category.title}</h3>
               </div>
               <div className="space-y-3">
