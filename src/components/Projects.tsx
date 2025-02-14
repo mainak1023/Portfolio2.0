@@ -19,12 +19,7 @@ const projects = [
     image: "https://images.unsplash.com/photo-1571715268998-d6e79bed5fc9?auto=format&fit=crop&q=80&w=400",
     tags: ["JavaScript", "QR Code API"]
   },
-  {
-    title: "Interactive Quiz Game",
-    description: "A fun and interactive quiz game built using JavaScript.",
-    image: "https://images.unsplash.com/photo-1606326608606-aa0b62935f2b?auto=format&fit=crop&q=80&w=400",
-    tags: ["JavaScript", "Web Animations", "Local Storage"]
-  }
+  
 ];
 
 export function Projects() {
@@ -32,7 +27,7 @@ export function Projects() {
     <section id="projects" className="py-20 bg-gradient-to-b from-[#111111] to-[#0a0a0a]">
       <div className="container mx-auto px-4 sm:px-6 lg:px-8">
         <h2 className="text-4xl md:text-5xl font-bold mb-16 text-center gradient-text">Projects</h2>
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
           {projects.map((project, index) => (
             <div key={index} className="bg-[#1a1a1a] rounded-2xl overflow-hidden card-hover group transform transition duration-500 hover:scale-105">
               <div className="relative">
@@ -58,16 +53,16 @@ export function Projects() {
                     </span>
                   ))}
                 </div>
-                <div className="flex gap-4">
+                <div className="flex pt-2 gap-4">
                   <a
                     href="#"
-                    className="flex-1 bg-blue-600 text-white px-4 py-2 rounded-lg hover:bg-blue-700 transition-colors text-center text-sm"
+                    className="flex-1 bg-blue-600 text-white px-4 py-2 rounded-s-xl hover:bg-blue-700 transition-colors text-center text-sm"
                   >
                     Live Demo
                   </a>
                   <a
                     href="#"
-                    className="flex-1 bg-[#2a2a2a] text-white px-4 py-2 rounded-lg hover:bg-[#3a3a3a] transition-colors text-center text-sm"
+                    className="flex-1 bg-[#2a2a2a] text-white px-4 py-2 rounded-e-xl hover:bg-[#3a3a3a] transition-colors text-center text-sm"
                   >
                     Source Code
                   </a>
