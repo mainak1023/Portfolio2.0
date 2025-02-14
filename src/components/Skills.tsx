@@ -1,23 +1,43 @@
 const skillCategories = [
   {
     title: "Programming",
-    skills: ["Python", "JavaScript", "PHP", "MySQL"],
+    skills: [
+      { name: "Python", icon: "fab fa-python" },
+      { name: "JavaScript", icon: "fab fa-js" },
+      { name: "PHP", icon: "fab fa-php" },
+      { name: "MySQL", icon: "fas fa-database" }
+    ],
     icon: "fas fa-code",
   },
   {
     title: "Design",
-    skills: ["HTML", "CSS", "Bootstrap", "Figma"],
-    icon: "🎨",
+    skills: [
+      { name: "HTML", icon: "fab fa-html5" },
+      { name: "CSS", icon: "fab fa-css3-alt" },
+      { name: "Bootstrap", icon: "fab fa-bootstrap" },
+      { name: "Figma", icon: "fas fa-palette" }
+    ],
+    icon: "fas fa-paint-brush",
   },
   {
     title: "Frameworks",
-    skills: ["React", "Node", "Spring Boot", "Express"],
-    icon: "⚡",
+    skills: [
+      { name: "React", icon: "fab fa-react" },
+      { name: "Node", icon: "fab fa-node" },
+      { name: "Spring Boot", icon: "fas fa-leaf" },
+      { name: "Express", icon: "fas fa-server" }
+    ],
+    icon: "fas fa-cubes",
   },
   {
     title: "Soft Skills",
-    skills: ["Communication", "Leadership", "Collaboration", "Adaptability"],
-    icon: "🤝",
+    skills: [
+      { name: "Communication", icon: "fas fa-comments" },
+      { name: "Leadership", icon: "fas fa-user-tie" },
+      { name: "Collaboration", icon: "fas fa-people-arrows" },
+      { name: "Adaptability", icon: "fas fa-sync" }
+    ],
+    icon: "fas fa-hands-helping",
   },
 ]
 
@@ -33,7 +53,7 @@ export function Skills() {
               className="bg-[#1a1a1a] p-6 rounded-2xl hover:transform hover:-translate-y-2 transition-all duration-300 shadow-lg hover:shadow-2xl"
             >
               <div className="flex items-center gap-3 mb-6">
-                <i className="text-3xl">{category.icon}</i>
+                <i className={`${category.icon} text-3xl text-blue-400`}></i>
                 <h3 className="text-xl md:text-2xl font-bold gradient-text">{category.title}</h3>
               </div>
               <div className="space-y-3">
@@ -42,8 +62,8 @@ export function Skills() {
                     key={skillIndex}
                     className="flex items-center gap-2 text-gray-300 hover:text-white transition-colors"
                   >
-                    <div className="w-1.5 h-1.5 rounded-full bg-blue-500" />
-                    <p className="text-sm md:text-base">{skill}</p>
+                    <i className={`${skill.icon} text-lg text-green-400`}></i>
+                    <p className="text-sm md:text-base">{skill.name}</p>
                   </div>
                 ))}
               </div>
@@ -54,4 +74,3 @@ export function Skills() {
     </section>
   )
 }
-
