@@ -25,9 +25,9 @@ const projects = [
 export function Projects() {
   return (
     <section id="projects" className="py-20 bg-gradient-to-b from-[#111111] to-[#0a0a0a]">
-      <div className="container mx-auto px-4 sm:px-6 lg:px-8">
+      <div className="container mx-auto max-w-6xl px-4 sm:px-6 lg:px-8">
         <h2 className="text-4xl md:text-5xl font-bold mb-16 text-center gradient-text">Projects</h2>
-        <div className="grid grid-flow-col px-8 auto-cols-[minmax(300px,1fr)] gap-8 overflow-x-auto">
+        <div className="grid grid-flow-col auto-cols-[minmax(300px,1fr)] gap-8 overflow-x-auto ">
           {projects.map((project, index) => (
             <div key={index} className="bg-[#1a1a1a] rounded-2xl overflow-hidden card-hover group transform transition duration-500 hover:scale-105 min-w-[300px]">
               <div className="relative">
