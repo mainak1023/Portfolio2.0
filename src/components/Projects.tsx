@@ -24,7 +24,7 @@ const projects = [
     title: "Interactive Quiz Game",
     description: "A fun and interactive quiz game built using JavaScript.",
     image: "https://images.unsplash.com/photo-1606326608606-aa0b62935f2b?auto=format&fit=crop&q=80&w=400",
-    tags: ["JavaScript", "Web Animations", "Local Storage"]
+    tags: ["JavaScript", "Web Animations"]
   },
   {
     title: "Task Management App",
@@ -41,10 +41,10 @@ export function Projects() {
     if (scrollContainerRef.current) {
       const scrollAmount = 320; // Width of card + gap
       const currentScroll = scrollContainerRef.current.scrollLeft;
-      const targetScroll = direction === 'left' 
-        ? currentScroll - scrollAmount 
+      const targetScroll = direction === 'left'
+        ? currentScroll - scrollAmount
         : currentScroll + scrollAmount;
-      
+
       scrollContainerRef.current.scrollTo({
         left: targetScroll,
         behavior: 'smooth'
@@ -76,16 +76,16 @@ export function Projects() {
           {/* Gradient overlays */}
           <div className="absolute left-0 top-0 bottom-0 w-12 bg-gradient-to-r from-[#0a0a0a] to-transparent z-10 pointer-events-none"></div>
           <div className="absolute right-0 top-0 bottom-0 w-12 bg-gradient-to-l from-[#0a0a0a] to-transparent z-10 pointer-events-none"></div>
-          
+
           {/* Scrollable container */}
-          <div 
+          <div
             ref={scrollContainerRef}
             className="overflow-x-auto hide-scrollbar"
           >
             <div className="flex gap-6 pb-4" style={{ width: 'max-content' }}>
               {projects.map((project, index) => (
-                <div 
-                  key={index} 
+                <div
+                  key={index}
                   className="project-card bg-[#1a1a1a] rounded-2xl overflow-hidden card-hover group w-[300px] flex-shrink-0"
                 >
                   <div className="relative">
@@ -106,8 +106,8 @@ export function Projects() {
                     </p>
                     <div className="flex flex-wrap gap-2 mb-4">
                       {project.tags.map((tag, tagIndex) => (
-                        <span 
-                          key={tagIndex} 
+                        <span
+                          key={tagIndex}
                           className="text-xs bg-blue-500/20 text-blue-400 px-2 py-1 rounded-full"
                         >
                           {tag}
