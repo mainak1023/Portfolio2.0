@@ -15,7 +15,7 @@ export function Hero() {
             Full-Stack Developer & Tech Enthusiast
           </p>
           <div className="flex flex-wrap justify-center gap-4 mb-8">
-            {["React.js", "Node.js", "TypeScript", "PHP"].map((skill) => (
+            {["React.js", "JavaScript", "TypeScript", "PHP"].map((skill) => (
               <span
                 key={skill}
                 className="bg-card dark:bg-card-dark px-4 py-2 rounded-full text-sm text-muted dark:text-muted-dark"
