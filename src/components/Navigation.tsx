@@ -18,12 +18,12 @@ export function Navigation({ darkMode, toggleDarkMode }: NavigationProps) {
 
   const mainIcons = [
     { icon: <Home size={20} />, href: "#home", title: "Home" },
-    { icon: <Github size={20} />, href: "https://github.com", title: "GitHub" },
-    { icon: <Linkedin size={20} />, href: "https://linkedin.com", title: "LinkedIn" },
+    { icon: <Github size={20} />, href: "https://github.com/mainak1023", title: "GitHub" },
+    { icon: <Linkedin size={20} />, href: "https://www.linkedin.com/in/mainak-majumder/", title: "LinkedIn" },
   ]
 
   const expandedIcons = [
-    { icon: <FileText size={20} />, href: "#resume", title: "Resume" },
+    { icon: <FileText size={20} />, href: "https://drive.google.com/file/d/1wloAj2QOjwcKgaD-Zw9dgzGjcgM3nnIH/view?usp=sharing", title: "Resume" },
     {
       icon: mounted ? darkMode ? <Sun size={20} /> : <Moon size={20} /> : null,
       href: "#",

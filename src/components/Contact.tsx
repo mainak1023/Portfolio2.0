@@ -125,11 +125,11 @@ export function Contact() {
                 className="bg-[#1a1a1a] p-4 rounded-full hover:bg-[#2a2a2a] transition-colors group">
                 <Mail size={24} className="group-hover:text-blue-500 transition-colors" />
               </a>
-              <a href="https://linkedin.com" target="_blank" rel="noopener noreferrer"
+              <a href="https://www.linkedin.com/in/mainak-majumder/" target="_blank" rel="noopener noreferrer"
                 className="bg-[#1a1a1a] p-4 rounded-full hover:bg-[#2a2a2a] transition-colors group">
                 <Linkedin size={24} className="group-hover:text-blue-500 transition-colors" />
               </a>
-              <a href="https://github.com" target="_blank" rel="noopener noreferrer"
+              <a href="https://github.com/mainak1023" target="_blank" rel="noopener noreferrer"
                 className="bg-[#1a1a1a] p-4 rounded-full hover:bg-[#2a2a2a] transition-colors group">
                 <Github size={24} className="group-hover:text-blue-500 transition-colors" />
               </a>
