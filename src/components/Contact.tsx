@@ -48,8 +48,9 @@ export function Contact() {
 
   return (
     <section id="contact" className="py-20">
+      
       <div className="container mx-auto px-6">
-        <h2 className="text-3xl font-bold mb-16 text-center underline-gradient">Get in Touch</h2>
+      <h2 className="text-4xl md:text-5xl font-bold mb-16 text-center gradient-text">Get in Touch</h2>
         <div className="max-w-4xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-12">
           {/* Contact Form */}
           <div className="bg-[#1a1a1a] p-8 rounded-2xl">
