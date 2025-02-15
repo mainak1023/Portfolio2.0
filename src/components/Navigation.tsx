@@ -6,7 +6,7 @@ export function Navigation() {
 
   const leftIcons = [
     { icon: <FileText size={20} />, href: "https://drive.google.com/file/d/1wloAj2QOjwcKgaD-Zw9dgzGjcgM3nnIH/view?usp=sharing", title: "Resume" },
-    { icon: <Sun size={20} />, href: "#", title: "Theme", onClick: () => {} },
+    { icon: <Sun size={20} />, href: "#", title: "Theme", onClick: () => { } },
   ];
 
   const centerIcons = [
@@ -21,17 +21,16 @@ export function Navigation() {
   ];
 
   return (
-    <nav 
-      className="fixed top-4 left-1/2 -translate-x-1/2 z-50"
+    <nav
+      className="fixed top-6 left-1/2 -translate-x-1/2 z-50"
       onMouseEnter={() => setIsHovered(true)}
       onMouseLeave={() => setIsHovered(false)}
     >
       <div className="bg-[#1a1a1a]/90 backdrop-blur-md border border-gray-800/50 rounded-full px-4 py-2">
         <div className="flex items-center">
           {/* Left expandable section */}
-          <div className={`overflow-hidden transition-all duration-300 flex ${
-            isHovered ? 'w-auto opacity-100 mr-2' : 'w-0 opacity-0'
-          }`}>
+          <div className={`overflow-hidden transition-all duration-300 flex ${isHovered ? 'w-auto opacity-100 mr-2' : 'w-0 opacity-0'
+            }`}>
             {leftIcons.map((item, index) => (
               <a
                 key={index}
@@ -64,9 +63,8 @@ export function Navigation() {
           </div>
 
           {/* Right expandable section */}
-          <div className={`overflow-hidden transition-all duration-300 flex ${
-            isHovered ? 'w-auto opacity-100 ml-2' : 'w-0 opacity-0'
-          }`}>
+          <div className={`overflow-hidden transition-all duration-300 flex ${isHovered ? 'w-auto opacity-100 ml-2' : 'w-0 opacity-0'
+            }`}>
             {rightIcons.map((item, index) => (
               <a
                 key={index}
