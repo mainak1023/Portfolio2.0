@@ -3,22 +3,22 @@ import { ChevronLeft, ChevronRight } from 'lucide-react';
 
 const projects = [
   {
-    title: "Spotify Clone",
-    description: "A clone of Spotify's web player built using React.js.",
-    image: "https://images.unsplash.com/photo-1614680376593-902f74cf0d41?auto=format&fit=crop&q=80&w=400",
+    title: "Redesign - MCCS",
+    description: "Redesigned the website of Computer Science Department, Mankar College.",
+    image: "https://github.com/mainak1023/Portfolio2.0/blob/master/assests/project1.jpg?raw=true",
     tags: ["React", "TypeScript", "Tailwind CSS"]
   },
   {
-    title: "White-board",
-    description: "An interactive whiteboard application built using React.js.",
-    image: "https://images.unsplash.com/photo-1544531585-9847b68c8c86?auto=format&fit=crop&q=80&w=400",
+    title: "Event Page for Social Event Lahari",
+    description: "A website to showcase the event details & all!",
+    image: "https://github.com/mainak1023/Portfolio2.0/blob/master/assests/project2.jpg?raw=true",
     tags: ["React", "Canvas API", "Socket.io"]
   },
   {
-    title: "QR Code Generator",
+    title: "Website of Applied Physio",
     description: "A web application that generates QR codes for given links or text.",
     image: "https://images.unsplash.com/photo-1571715268998-d6e79bed5fc9?auto=format&fit=crop&q=80&w=400",
-    tags: ["JavaScript", "QR Code API"]
+    tags: ["UI/UX", "React", "Tailwind CSS"]
   },
   {
     title: "Interactive Quiz Game",
