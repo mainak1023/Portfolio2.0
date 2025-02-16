@@ -16,7 +16,7 @@ const projects = [
   },
   {
     title: "Website of Applied Physio",
-    description: "A web application that generates QR codes for given links or text.",
+    description: "Designed the UI for the web application of Applied Physio.",
     image: "https://github.com/mainak1023/Portfolio2.0/blob/master/assests/project3.jpg?raw=true",
     tags: ["UI/UX", "React", "Tailwind CSS"]
   },
