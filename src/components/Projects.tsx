@@ -29,7 +29,7 @@ const projects = [
   {
     title: "Prime-Dev Technologies Website",
     description: "A website for our own start-up Prime-Dev Technologies.",
-    image: "https://images.unsplash.com/photo-1606326608606-aa0b62935f2b?auto=format&fit=crop&q=80&w=400",
+    image: "https://github.com/mainak1023/Portfolio2.0/blob/master/assests/project4.jpg?raw=true",
     tags: ["HTML", "Figma", "Web Animations"],
     live: "https://primedev.sagarkundu.live/",
   },
