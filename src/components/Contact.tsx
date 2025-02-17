@@ -122,7 +122,7 @@ export function Contact() {
             </div>
 
             <div className="flex flex-wrap justify-center md:justify-start gap-4">
-              <a href="mailto:contact@mainak.dev"
+              <a href="mailto:mainak1112@gmail.com"
                 className="bg-[#1a1a1a] p-4 rounded-full hover:bg-[#2a2a2a] transition-colors group">
                 <Mail size={24} className="group-hover:text-blue-500 transition-colors" />
               </a>
@@ -134,10 +134,10 @@ export function Contact() {
                 className="bg-[#1a1a1a] p-4 rounded-full hover:bg-[#2a2a2a] transition-colors group">
                 <Github size={24} className="group-hover:text-blue-500 transition-colors" />
               </a>
-              <a href="https://twitter.com" target="_blank" rel="noopener noreferrer"
+              {/* <a href="https://twitter.com" target="_blank" rel="noopener noreferrer"
                 className="bg-[#1a1a1a] p-4 rounded-full hover:bg-[#2a2a2a] transition-colors group">
                 <Twitter size={24} className="group-hover:text-blue-500 transition-colors" />
-              </a>
+              </a> */}
             </div>
           </div>
         </div>
