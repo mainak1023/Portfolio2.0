@@ -6,9 +6,9 @@ const experiences = [
     icon: <Briefcase className="w-8 h-8 text-blue-400" />,
     items: [
       {
-        role: "Computer Instructor",
-        company: "Computer Infotech",
-        duration: "August 2022 - March 2024",
+        role: "Founder and CEO",
+        company: "Prime-Dev Technologies",
+        duration: "January 2025 - Current",
         icon: <Building className="w-5 h-5 text-blue-300" />,
       },
       {
@@ -24,9 +24,9 @@ const experiences = [
         icon: <Building className="w-5 h-5 text-blue-300" />,
       },
       {
-        role: "Founder and CEO",
-        company: "Prime-Dev Technologies",
-        duration: "January 2025 - Current",
+        role: "Computer Instructor",
+        company: "Computer Infotech",
+        duration: "August 2022 - March 2024",
         icon: <Building className="w-5 h-5 text-blue-300" />,
       },
     ],

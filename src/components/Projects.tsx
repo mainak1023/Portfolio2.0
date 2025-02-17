@@ -6,25 +6,32 @@ const projects = [
     title: "Redesign - MCCS",
     description: "Redesigned the website of Computer Science Department, Mankar College.",
     image: "https://github.com/mainak1023/Portfolio2.0/blob/master/assests/project1.jpg?raw=true",
-    tags: ["React", "TypeScript", "Tailwind CSS"]
+    tags: ["React", "TypeScript", "Tailwind CSS"],
+    live: "https://redesign-mccs.sagarkundu.live/",
+    source: "https://github.com/sa001gar/Redesign-MCCS"
   },
   {
     title: "Event Page for Social Event Lahari",
     description: "A website to showcase the event details & all!",
     image: "https://github.com/mainak1023/Portfolio2.0/blob/master/assests/project2.jpg?raw=true",
-    tags: ["React", "Canvas API", "Socket.io"]
+    tags: ["React", "Canvas API", "Socket.io"],
+    live: "https://events.computersciencemancoll.in/",
+    source: "#"
   },
   {
     title: "Website of Applied Physio",
     description: "Designed the UI for the web application of Applied Physio.",
     image: "https://github.com/mainak1023/Portfolio2.0/blob/master/assests/project3.jpg?raw=true",
-    tags: ["UI/UX", "React", "Tailwind CSS"]
+    tags: ["UI/UX", "React", "Tailwind CSS"],
+    live: "https://appliedphysio.in/",
+    source: "#"
   },
   {
-    title: "Interactive Quiz Game",
-    description: "A fun and interactive quiz game built using JavaScript.",
+    title: "Prime-Dev Technologies Website",
+    description: "A website for our own start-up Prime-Dev Technologies.",
     image: "https://images.unsplash.com/photo-1606326608606-aa0b62935f2b?auto=format&fit=crop&q=80&w=400",
-    tags: ["JavaScript", "Web Animations"]
+    tags: ["HTML", "Figma", "Web Animations"],
+    live: "https://primedev.sagarkundu.live/",
   },
   {
     title: "Task Management App",
@@ -116,13 +123,13 @@ export function Projects() {
                     </div>
                     <div className="flex pt-2 gap-4">
                       <a
-                        href="#"
+                        href={project.live}
                         className="flex-1 bg-blue-600 text-white px-4 py-2 rounded-lg hover:bg-blue-700 transition-colors text-center text-sm"
                       >
                         Live Demo
                       </a>
                       <a
-                        href="#"
+                        href={project.source}
                         className="flex-1 bg-[#2a2a2a] text-white px-4 py-2 rounded-lg hover:bg-[#3a3a3a] transition-colors text-center text-sm"
                       >
                         Source Code
